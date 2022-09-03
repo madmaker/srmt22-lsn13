@@ -17,7 +17,7 @@
                 <li>Курс веб-программирования с нуля</li>
                 <li>Блог на ZEN</li>
             </ul>
-            <button>Вступить в клуб бесплатно</button>
+            <button id="join-to-club">Вступить в клуб бесплатно</button>
         </nav>
         <div><a class="freepick-link" href="https://www.freepik.com/free-photo/professional-programmer-working-late-dark-office_5698342.htm#query=programmer&position=3&from_view=search" target="_blank">Image by pressfoto on Freepik</a></div>
     </header>
@@ -220,7 +220,7 @@
     </footer>
 
 <aside>
-    <div class="modal">
+    <div class="modal" id="modal-join-us">
         <div class="modal-content">
             <div class="close-cross-btn">
                 <div class="icon-cancel">&nbsp;</div>
@@ -231,7 +231,7 @@
 
                 <form>
                     <label for="phone">Телефон для связи</label>
-                    <input type="tel" name="phone" placeholder="+79991112233">
+                    <input type="tel" name="phone" pattern="\+[0-9]{9,13}" placeholder="+79991112233" required>
                     <button type="submit">Поехали!</button>
                 </form>
             </div>
@@ -239,5 +239,7 @@
     </div>
 </aside>
 
+
+<script type="text/javascript" src="js/modals.js" async></script>
 </body>
 </html>
